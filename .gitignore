@@ -1,1 +1,4 @@
-/DL_model
+/DL_model/model/Blur_Tracking_Model.h5
+/DL_model/model/Heard_tracking_model.h5
+/DL_model/model/PluralEffusion_tracking_model.h5
+/DL_model/model/UndefinedObject_tracking_model.h5
