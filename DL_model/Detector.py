@@ -30,6 +30,7 @@ class Detector():
     # out value
     Listresult = [None, None, None, None]
     resultDiagnosis = [None, None, None, None]
+        
     def get_session(self):
         config = tf.compat.v1.ConfigProto()
         config.gpu_options.allow_growth = True

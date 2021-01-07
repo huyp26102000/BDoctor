@@ -360,6 +360,7 @@ if __name__ == "__main__":
     removeTitleBar(MainWindow)
     # setup title bar
     setupTitleBar(ui)
+    # Open loading Ưin
     # Open Sign Window
     Form_Sign = QtWidgets.QWidget()
     ui_Signin = Ui_Form_SignIn()
