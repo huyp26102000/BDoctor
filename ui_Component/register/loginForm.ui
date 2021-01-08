@@ -266,7 +266,7 @@ QPushButton:pressed {
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
+             <item alignment="Qt::AlignBottom">
               <widget class="QFrame" name="frame_10">
                <property name="maximumSize">
                 <size>
@@ -301,13 +301,13 @@ QPushButton:pressed {
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>80</height>
+                    <height>70</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
                     <width>16777215</width>
-                    <height>30</height>
+                    <height>70</height>
                    </size>
                   </property>
                   <property name="frameShape">
@@ -419,7 +419,7 @@ QPushButton:pressed {
                          </size>
                         </property>
                         <property name="styleSheet">
-                         <string notr="true">color: rgb(255, 255, 255);</string>
+                         <string notr="true">color: rgb(255, 255, 255); background-color: rgba(27, 29, 35, 200);</string>
                         </property>
                         <property name="text">
                          <string>First name</string>
@@ -435,7 +435,7 @@ QPushButton:pressed {
                          </size>
                         </property>
                         <property name="styleSheet">
-                         <string notr="true">color: rgb(255, 255, 255);</string>
+                         <string notr="true">color: rgb(255, 255, 255); background-color: rgba(27, 29, 35, 200);</string>
                         </property>
                         <property name="text">
                          <string>Last name</string>
@@ -476,7 +476,7 @@ QPushButton:pressed {
                      <property name="maximumSize">
                       <size>
                        <width>16777215</width>
-                       <height>250</height>
+                       <height>270</height>
                       </size>
                      </property>
                      <property name="frameShape">
@@ -510,7 +510,7 @@ QPushButton:pressed {
                          </size>
                         </property>
                         <property name="styleSheet">
-                         <string notr="true">color: rgb(255, 255, 255);</string>
+                         <string notr="true">color: rgb(255, 255, 255); background-color: rgba(27, 29, 35, 200);</string>
                         </property>
                         <property name="text">
                          <string>Email</string>
@@ -525,15 +525,101 @@ QPushButton:pressed {
                        </widget>
                       </item>
                       <item>
+                       <widget class="QFrame" name="frame_9">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(255, 255, 255); background-color: rgba(27, 29, 35, 200);</string>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_12">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="loginFrom_lbPhoneNumber">
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">color: rgb(255, 255, 255); background-color: rgba(27, 29, 35, 200);</string>
+                           </property>
+                           <property name="text">
+                            <string>Phone Number</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QTextEdit" name="loginFrom_tbPhoneNumber">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
                        <widget class="QLabel" name="loginFrom_lbMajor">
                         <property name="minimumSize">
                          <size>
                           <width>0</width>
-                          <height>25</height>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>30</height>
                          </size>
                         </property>
                         <property name="styleSheet">
-                         <string notr="true">color: rgb(255, 255, 255);</string>
+                         <string notr="true">color: rgb(255, 255, 255); background-color: rgba(27, 29, 35, 200);</string>
                         </property>
                         <property name="text">
                          <string>Medical Major</string>
@@ -690,10 +776,134 @@ QPushButton:pressed {
                        </widget>
                       </item>
                       <item>
-                       <widget class="QTableView" name="loginFrom_ExList">
+                       <widget class="QTableWidget" name="loginFrom_ExList">
                         <property name="styleSheet">
-                         <string notr="true">color: rgb(255, 255, 255);</string>
+                         <string notr="true">QTableWidget {	
+	background-color: rgb(39, 44, 54);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	border-radius: 5px;
+	gridline-color: rgb(44, 49, 60);
+	border-bottom: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::item{
+	border-color: rgb(44, 49, 60);
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: rgb(44, 49, 60);
+}
+QTableWidget::item:selected{
+	background-color: rgb(85, 170, 255);
+}
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 14px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 14px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+QHeaderView::section{
+	Background-color: rgb(39, 44, 54);
+	max-width: 30px;
+	border: 1px solid rgb(44, 49, 60);
+	border-style: none;
+    border-bottom: 1px solid rgb(44, 49, 60);
+    border-right: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::horizontalHeader {	
+	background-color: rgb(81, 255, 0);
+}
+QHeaderView::section:horizontal
+{
+    border: 1px solid rgb(32, 34, 42);
+	background-color: rgb(27, 29, 35);
+	padding: 3px;
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+QHeaderView::section:vertical
+{
+    border: 1px solid rgb(44, 49, 60);
+}
+</string>
                         </property>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <column>
+                         <property name="text">
+                          <string>New Column</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>New Column</string>
+                         </property>
+                        </column>
+                        <item row="0" column="0">
+                         <property name="text">
+                          <string>Experience</string>
+                         </property>
+                        </item>
+                        <item row="0" column="1">
+                         <property name="text">
+                          <string>Year</string>
+                         </property>
+                        </item>
                        </widget>
                       </item>
                      </layout>
@@ -1013,7 +1223,7 @@ QPushButton:pressed {
                        </widget>
                       </item>
                       <item>
-                       <widget class="QTableView" name="loginFrom_AchirveList">
+                       <widget class="QTableWidget" name="loginFrom_AchirveList">
                         <property name="minimumSize">
                          <size>
                           <width>0</width>
@@ -1027,8 +1237,142 @@ QPushButton:pressed {
                          </size>
                         </property>
                         <property name="styleSheet">
-                         <string notr="true">color: rgb(255, 255, 255);</string>
+                         <string notr="true">QTableWidget {	
+	background-color: rgb(39, 44, 54);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	border-radius: 5px;
+	gridline-color: rgb(44, 49, 60);
+	border-bottom: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::item{
+	border-color: rgb(44, 49, 60);
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: rgb(44, 49, 60);
+}
+QTableWidget::item:selected{
+	background-color: rgb(85, 170, 255);
+}
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 14px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 14px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+QHeaderView::section{
+	Background-color: rgb(39, 44, 54);
+	max-width: 30px;
+	border: 1px solid rgb(44, 49, 60);
+	border-style: none;
+    border-bottom: 1px solid rgb(44, 49, 60);
+    border-right: 1px solid rgb(44, 49, 60);
+}
+QTableWidget::horizontalHeader {	
+	background-color: rgb(81, 255, 0);
+}
+QHeaderView::section:horizontal
+{
+    border: 1px solid rgb(32, 34, 42);
+	background-color: rgb(27, 29, 35);
+	padding: 3px;
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+QHeaderView::section:vertical
+{
+    border: 1px solid rgb(44, 49, 60);
+}
+</string>
                         </property>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <row>
+                         <property name="text">
+                          <string>New Row</string>
+                         </property>
+                        </row>
+                        <column>
+                         <property name="text">
+                          <string>New Column</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>New Column</string>
+                         </property>
+                        </column>
+                        <item row="0" column="0">
+                         <property name="text">
+                          <string>Achiverment</string>
+                         </property>
+                        </item>
+                        <item row="0" column="1">
+                         <property name="text">
+                          <string>Year</string>
+                         </property>
+                        </item>
                        </widget>
                       </item>
                      </layout>
