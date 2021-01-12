@@ -10,7 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from material import *
-
+from datetime import datetime, date
 
 class UI_DoctorRegMainForm(object):
         AvatarPath = None
@@ -364,6 +364,7 @@ class UI_DoctorRegMainForm(object):
                 item = QtWidgets.QTableWidgetItem()
                 self.loginFrom_ExList.setItem(0, 1, item)
                 self.verticalLayout_11.addWidget(self.loginFrom_ExList)
+                self.loginFrom_ExList.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
                 self.horizontalLayout_5.addWidget(self.frame_18)
                 self.frame_19 = QtWidgets.QFrame(self.frame_16)
                 self.frame_19.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -576,6 +577,7 @@ class UI_DoctorRegMainForm(object):
                 item = QtWidgets.QTableWidgetItem()
                 self.loginFrom_AchirveList.setItem(0, 1, item)
                 self.verticalLayout_14.addWidget(self.loginFrom_AchirveList)
+                self.loginFrom_AchirveList.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
                 self.horizontalLayout_7.addWidget(self.frame_22)
                 self.frame_23 = QtWidgets.QFrame(self.frame_17)
                 self.frame_23.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -763,6 +765,7 @@ class UI_DoctorRegMainForm(object):
                 self.loginFrom_CbbBirthyear.setMinimumSize(QtCore.QSize(0, 30))
                 self.loginFrom_CbbBirthyear.setMaximumSize(QtCore.QSize(16777215, 30))
                 self.loginFrom_CbbBirthyear.setObjectName("loginFrom_CbbBirthyear")
+                self.loginFrom_CbbBirthyear.setStyleSheet("color: rgb(255, 255, 255);")
                 self.horizontalLayout_11.addWidget(self.loginFrom_CbbBirthyear)
                 self.verticalLayout_17.addWidget(self.frame_28)
                 self.frame_29 = QtWidgets.QFrame(self.frame_7)
@@ -873,7 +876,14 @@ class UI_DoctorRegMainForm(object):
                 # add medical major 
                 for tmp in majorList:
                         self.loginFrom_CbbMajor.addItem(str(tmp))
-
+                for i in range(1, 45):
+                        self.loginFrom_CbbNumyear.addItem(str(i))
+                for i in range(2021, 1900, -1):
+                        self.loginFrom_CbbNumyearAchir.addItem(str(i))
+                today = date.today()
+                current_year = '20' + today.strftime("%y")
+                for i in range(int(current_year), 1900, -1):
+                        self.loginFrom_CbbBirthyear.addItem(str(i))
         def retranslateUi(self, MainWindow):
                 _translate = QtCore.QCoreApplication.translate
                 MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))

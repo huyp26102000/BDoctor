@@ -1,0 +1,1 @@
+from DoctorRegistorApplication import *
