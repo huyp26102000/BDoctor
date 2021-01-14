@@ -83,25 +83,6 @@ def resizePixmap(inPixmap, label):
             pixmapWidth = (labelHeight*pixmapWidth)/tmp_pixmapHeight
     inPixmap = inPixmap.scaled(pixmapWidth, pixmapHeight)
     return inPixmap
-# get account name
-def getAccountName(inputName):
-    outputText = ''
-    i = 0
-    splitedText = inputName.split(' ')
-    ReSplitedText = reversed(splitedText)
-
-    for tmp in ReSplitedText:
-        if i == 0:
-            tmpText = str(tmp)
-            outputText+=tmpText
-        i+=1
-    i = 0
-    for tmp in splitedText:
-        if i < len(splitedText)-1:
-            tmpText = str(tmp)
-            outputText+=tmpText[0]
-        i+=1
-    return outputText.lower()
 
 
 # ADDING INFORMATION FUNCTION
@@ -148,6 +129,7 @@ def RegisterAccount():
     drProfile.currentWorkingLocation = str(ui_RegDocForm.loginFrom_TbCurrentWorkLocation.toPlainText())
     drProfile.education = str(ui_RegDocForm.loginFrom_TbEducation.toPlainText())
     checkNoneAtribute(drProfile)
+    
 
 def checkNoneAtribute(drProfileObj):
     if(drProfileObj.familyName == None or drProfileObj.familyName == ''):
