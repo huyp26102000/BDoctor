@@ -1,8 +1,19 @@
 import mysql.connector
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="lemon"
-)
 
-print(mydb)
+class AppConnector():
+    host = None
+    user = None
+    passwd = None
+    database = None
+    myconn = None
+    cur = None
+    
+    def __init__(self, hostStr, userStr, passwdStr, databaseStr):
+        self.host = hostStr
+        self.user = userStr
+        self.passwd = passwdStr
+        self.database = databaseStr
+    def connectTodataBase(self):
+        self.myconn = mysql.connector.connect(host = self.host, user = self.user, passwd = self.passwd, database = self.database)
+        self.cur = self.myconn.cursor()
+    

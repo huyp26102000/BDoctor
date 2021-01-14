@@ -1,13 +1,8 @@
 from ModuleImport import *
 import sys, os, shutil
-from datetime import datetime, date
-import random
-
 from distutils.dir_util import copy_tree
-import time
 
-from informationAdding import *
-from module.DoctorProfile import *
+
 #######################################################################
 # TITLEBAR FUNCTION
 #######################################################################
@@ -22,14 +17,7 @@ def minimizeWindow():
 #######################################################################
 # file function
 #######################################################################
-def getRandomText():
-    now = datetime.now()
-    today = date.today()
-    current_time = now.strftime("%Ho%Mo%S")
-    current_date = today.strftime("%mo%do%y")
-    randomNumber = int(random.random()*100000000)
-    randomText = str(current_date)+'o'+str(current_time)+'o'+str(randomNumber)
-    return randomText
+
 def getFileNameFromPath(xfilePath):
     max = len(xfilePath)
     fileName = ""
@@ -216,6 +204,11 @@ if __name__ == "__main__":
     popupWindow.setWindowFlags(QtCore.Qt.FramelessWindowHint)
     ui_error_popup.btn_OK.clicked.connect(hidePopupWindow)
     #######################################################################
+    # Setup Database
+    DBConnector = AppConnector("localhost", "root", "lemon", "bdoctordb")
+    DBConnector.connectTodataBase()
+    #######################################################################
+    # Component event
     # load avatar
     ui_RegDocForm.loginFrom_btnChoose.clicked.connect(loadRawImage)
     # add achiverment

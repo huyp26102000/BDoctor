@@ -242,7 +242,7 @@ QPushButton:pressed {
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+             <iconset resource="../resource.qrc">
               <normaloff>:/24x24/icons/24x24/cil-window-minimize.png</normaloff>:/24x24/icons/24x24/cil-window-minimize.png</iconset>
             </property>
            </widget>
@@ -277,7 +277,7 @@ QPushButton:pressed {
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+             <iconset resource="../resource.qrc">
               <normaloff>:/24x24/icons/24x24/cil-window-maximize.png</normaloff>:/24x24/icons/24x24/cil-window-maximize.png</iconset>
             </property>
            </widget>
@@ -312,7 +312,7 @@ QPushButton:pressed {
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+             <iconset resource="../resource.qrc">
               <normaloff>:/24x24/icons/24x24/cil-x.png</normaloff>:/24x24/icons/24x24/cil-x.png</iconset>
             </property>
            </widget>
@@ -434,7 +434,7 @@ QPushButton:pressed {
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                <iconset resource="../resource.qrc">
                  <normaloff>:/asset/asset/lungs-icon-11.png</normaloff>:/asset/asset/lungs-icon-11.png</iconset>
                </property>
                <property name="iconSize">
@@ -469,7 +469,7 @@ QPushButton:pressed {
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                <iconset resource="../resource.qrc">
                  <normaloff>:/24x24/icons/24x24/cil-notes.png</normaloff>:/24x24/icons/24x24/cil-notes.png</iconset>
                </property>
                <property name="iconSize">
@@ -504,7 +504,7 @@ QPushButton:pressed {
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                <iconset resource="../resource.qrc">
                  <normaloff>:/24x24/icons/24x24/cil-medical-cross.png</normaloff>:/24x24/icons/24x24/cil-medical-cross.png</iconset>
                </property>
                <property name="iconSize">
@@ -539,7 +539,7 @@ QPushButton:pressed {
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                <iconset resource="../resource.qrc">
                  <normaloff>:/asset/asset/stomach-512.png</normaloff>:/asset/asset/stomach-512.png</iconset>
                </property>
                <property name="iconSize">
@@ -577,7 +577,7 @@ QPushButton:pressed {
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                <iconset resource="../resource.qrc">
                  <normaloff>:/asset/asset/ct-scan.png</normaloff>:/asset/asset/ct-scan.png</iconset>
                </property>
                <property name="iconSize">
@@ -707,7 +707,7 @@ QPushButton:pressed {
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                <iconset resource="../resource.qrc">
                  <normaloff>:/24x24/icons/24x24/cil-options.png</normaloff>:/24x24/icons/24x24/cil-options.png</iconset>
                </property>
                <property name="iconSize">
@@ -727,7 +727,7 @@ QPushButton:pressed {
        <item>
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="page_menu_infor">
           <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -927,7 +927,7 @@ QPushButton:pressed {
                        <string/>
                       </property>
                       <property name="icon">
-                       <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                       <iconset resource="../resource.qrc">
                         <normaloff>:/24x24/icons/24x24/cil-folder-open.png</normaloff>:/24x24/icons/24x24/cil-folder-open.png</iconset>
                       </property>
                      </widget>
@@ -1686,7 +1686,7 @@ QPushButton:pressed {
                           <string/>
                          </property>
                          <property name="icon">
-                          <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                          <iconset resource="../resource.qrc">
                            <normaloff>:/24x24/icons/24x24/cil-view-module.png</normaloff>:/24x24/icons/24x24/cil-view-module.png</iconset>
                          </property>
                         </widget>
@@ -2150,7 +2150,7 @@ QPushButton:pressed {
                           <string/>
                          </property>
                          <property name="icon">
-                          <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                          <iconset resource="../resource.qrc">
                            <normaloff>:/24x24/icons/24x24/cil-arrow-circle-right.png</normaloff>:/24x24/icons/24x24/cil-arrow-circle-right.png</iconset>
                          </property>
                         </widget>
@@ -2417,7 +2417,7 @@ QPushButton:pressed {
                           <string/>
                          </property>
                          <property name="icon">
-                          <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                          <iconset resource="../resource.qrc">
                            <normaloff>:/24x24/icons/24x24/cil-justify-left.png</normaloff>:/24x24/icons/24x24/cil-justify-left.png</iconset>
                          </property>
                         </widget>
@@ -2452,7 +2452,7 @@ QPushButton:pressed {
                           <string/>
                          </property>
                          <property name="icon">
-                          <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                          <iconset resource="../resource.qrc">
                            <normaloff>:/24x24/icons/24x24/cil-trash.png</normaloff>:/24x24/icons/24x24/cil-trash.png</iconset>
                          </property>
                         </widget>
@@ -2759,7 +2759,7 @@ QPushButton:pressed {
                           <string/>
                          </property>
                          <property name="icon">
-                          <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                          <iconset resource="../resource.qrc">
                            <normaloff>:/24x24/icons/24x24/cil-view-module.png</normaloff>:/24x24/icons/24x24/cil-view-module.png</iconset>
                          </property>
                         </widget>
@@ -2948,7 +2948,7 @@ QPushButton:pressed {
                              <string>Xử Lí</string>
                             </property>
                             <property name="icon">
-                             <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                             <iconset resource="../resource.qrc">
                               <normaloff>:/24x24/icons/24x24/cil-cursor.png</normaloff>:/24x24/icons/24x24/cil-cursor.png</iconset>
                             </property>
                            </widget>
@@ -2980,7 +2980,7 @@ QPushButton:pressed {
                              <string>Xem Kết Quả Chi Tiết</string>
                             </property>
                             <property name="icon">
-                             <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                             <iconset resource="../resource.qrc">
                               <normaloff>:/24x24/icons/24x24/cil-justify-left.png</normaloff>:/24x24/icons/24x24/cil-justify-left.png</iconset>
                             </property>
                            </widget>
@@ -3012,7 +3012,7 @@ QPushButton:pressed {
                              <string>In Kết Quả</string>
                             </property>
                             <property name="icon">
-                             <iconset resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">
+                             <iconset resource="../resource.qrc">
                               <normaloff>:/24x24/icons/24x24/cil-print.png</normaloff>:/24x24/icons/24x24/cil-print.png</iconset>
                             </property>
                            </widget>
@@ -3242,7 +3242,7 @@ QPushButton:pressed {
                     <string/>
                    </property>
                    <property name="pixmap">
-                    <pixmap resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">:/asset/asset/Artboard 1.png</pixmap>
+                    <pixmap resource="../resource.qrc">:/asset/asset/Artboard 1.png</pixmap>
                    </property>
                    <property name="scaledContents">
                     <bool>true</bool>
@@ -3334,7 +3334,7 @@ QPushButton:pressed {
                     <string/>
                    </property>
                    <property name="pixmap">
-                    <pixmap resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">:/asset/asset/Artboard 1.png</pixmap>
+                    <pixmap resource="../resource.qrc">:/asset/asset/Artboard 1.png</pixmap>
                    </property>
                    <property name="scaledContents">
                     <bool>true</bool>
@@ -3426,7 +3426,7 @@ QPushButton:pressed {
                     <string/>
                    </property>
                    <property name="pixmap">
-                    <pixmap resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">:/asset/asset/Artboard 1.png</pixmap>
+                    <pixmap resource="../resource.qrc">:/asset/asset/Artboard 1.png</pixmap>
                    </property>
                    <property name="scaledContents">
                     <bool>true</bool>
@@ -3527,7 +3527,7 @@ QPushButton:pressed {
                     <string/>
                    </property>
                    <property name="pixmap">
-                    <pixmap resource="../9.07.2020 - design - mvp/demo_mvp/resource.qrc">:/asset/asset/bdoctor_White.png</pixmap>
+                    <pixmap resource="../resource.qrc">:/asset/asset/bdoctor_White.png</pixmap>
                    </property>
                    <property name="scaledContents">
                     <bool>true</bool>
@@ -3578,8 +3578,9 @@ by BTEK Team</string>
   </widget>
  </widget>
  <resources>
+  <include location="../resource.qrc"/>
+  <include location="../resource.qrc"/>
   <include location="../9.07.2020 - design - mvp/demo_mvp/resource.qrc"/>
-  <include location="resource.qrc"/>
  </resources>
  <connections/>
 </ui>

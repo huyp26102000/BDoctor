@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>420</width>
-    <height>320</height>
+    <width>240</width>
+    <height>160</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>420</width>
-    <height>320</height>
+    <width>240</width>
+    <height>160</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -39,8 +39,8 @@
     <widget class="QFrame" name="CertainFrame">
      <property name="minimumSize">
       <size>
-       <width>400</width>
-       <height>300</height>
+       <width>240</width>
+       <height>160</height>
       </size>
      </property>
      <property name="styleSheet">
@@ -133,7 +133,7 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_4">
          <property name="spacing">
-          <number>0</number>
+          <number>2</number>
          </property>
          <property name="leftMargin">
           <number>10</number>
@@ -152,11 +152,14 @@
            <property name="font">
             <font>
              <family>Segoe UI</family>
-             <pointsize>12</pointsize>
+             <pointsize>10</pointsize>
             </font>
            </property>
            <property name="text">
             <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
            </property>
           </widget>
          </item>
@@ -173,13 +176,13 @@
              <number>0</number>
             </property>
             <property name="leftMargin">
-             <number>20</number>
+             <number>50</number>
             </property>
             <property name="topMargin">
              <number>0</number>
             </property>
             <property name="rightMargin">
-             <number>20</number>
+             <number>50</number>
             </property>
             <property name="bottomMargin">
              <number>0</number>
@@ -195,19 +198,19 @@
               <property name="minimumSize">
                <size>
                 <width>0</width>
-                <height>40</height>
+                <height>25</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>16777215</width>
-                <height>40</height>
+                <height>25</height>
                </size>
               </property>
               <property name="font">
                <font>
                 <family>Segoe UI</family>
-                <pointsize>14</pointsize>
+                <pointsize>10</pointsize>
                 <weight>75</weight>
                 <bold>true</bold>
                </font>
@@ -249,6 +252,21 @@ QPushButton:pressed {
             <enum>QFrame::Raised</enum>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_7">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
             <item>
              <widget class="QLabel" name="label_BTEKTeam">
               <property name="text">
