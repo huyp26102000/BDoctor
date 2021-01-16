@@ -1,6 +1,7 @@
 import time
 from datetime import datetime, date
 import random
+import hashlib
 
 def getRandomText():
     now = datetime.now()
@@ -29,3 +30,6 @@ def getAccountName(inputName):
             outputText+=tmpText[0]
         i+=1
     return outputText.lower()
+def getCrytoPassword(password):
+    h = hashlib.sha256(str(password).encode('utf-8'))
+    return str(h.hexdigest())

@@ -1,5 +1,6 @@
 import mysql.connector
-import uuid
+import uuid 
+from ..UtilityFunction import *
 class AppConnector():
     host = None
     user = None
@@ -17,12 +18,22 @@ class AppConnector():
         self.myconn = mysql.connector.connect(host = self.host, user = self.user, passwd = self.passwd, database = self.database)
         self.cur = self.myconn.cursor()
     # Example guide: DBConnector.pushAccountInfor("HuyP4", "abc@123abc", 0)
-    def pushAccountInfor(self, id, AccUsername, AccPassword, role):
-        nextAccID = self.getNextAccountNumber(str(AccUsername))
-        AccUsername+=str(nextAccID)
-        sqlAccountInfor = ("insert into bdoctordb.accountInfor(ID, username, password, role) "
+    def registorAccount(self, doctorObject):
+        uuID = str(uuid.uuid1())
+        # Get 
+        drName = str(doctorObject.familyName) + ' ' + str(doctorObject.lastName)
+        AccUsername = str(getAccountName(drName))
+        nextAccID = self.getNextAccountNumber(AccUsername)
+        AccUsername+= str(nextAccID)
+
+        tempPassword = getRandomText()
+
+        self.pushAccountInfor(uuID, AccUsername, getCrytoPassword(tempPassword), 1)
+        self.pushInitAccountInfor(uuID, AccUsername, tempPassword)
+    def pushAccountInfor(self, uuid, AccUsername, AccPassword, role):
+        sqlAccountInfor = ("insert into bdoctordb.accountinfor(UUID, username, password, role) "
                         "values (%s, %s, %s, %s)")
-        AccountInforVal = (None, AccUsername, AccPassword, role)
+        AccountInforVal = (uuid, AccUsername, AccPassword, role)
         try:
             #inserting the values into the table
             self.cur.execute(sqlAccountInfor, AccountInforVal)
@@ -31,6 +42,18 @@ class AppConnector():
         except:
             self.myconn.rollback()
         print(self.cur.rowcount,"Account record uploaded!")
+    def pushInitAccountInfor(self, uuid, AccUsername, AccPassword):
+        sqlAccountInfor = ("insert into bdoctordb.initAccount(UUID, username, password, changingstatus) "
+                        "values (%s, %s, %s, %s)")
+        AccountInforVal = (uuid, AccUsername, AccPassword, None)
+        try:
+            #inserting the values into the table
+            self.cur.execute(sqlAccountInfor, AccountInforVal)
+            #commit the transaction
+            self.myconn.commit()
+        except:
+            self.myconn.rollback()
+        print(self.cur.rowcount,"Initiation Account record uploaded!")
     def pushDoctorInfor(self, doctorProfileObj):
         sqlDoctorInfor = ("insert into bdoctordb.accountInfor(ID, username, password, role) "
                         "values (%s, %s, %s, %s)")
@@ -43,7 +66,6 @@ class AppConnector():
         except:
             self.myconn.rollback()
         print(self.cur.rowcount,"Account record uploaded!")
-
 
     def getNextAccountNumber(self, AccUsername):
         AccUsername = AccUsername.lower()
@@ -59,5 +81,5 @@ class AppConnector():
         return count
 # DBConnector = AppConnector("localhost", "root", "lemon", "bdoctordb")
 # DBConnector.connectTodataBase()
-# DBConnector.pushAccountInfor("HuyP", "abc@123abc", 0)
+# DBConnector.pushAccountInfor("abc", "HuyP", "abc@123abc", 0)
 # DBConnector.getNextAccountNumber("huyp")

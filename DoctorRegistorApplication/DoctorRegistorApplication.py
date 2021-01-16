@@ -129,7 +129,7 @@ def RegisterAccount():
     drProfile.currentWorkingLocation = str(ui_RegDocForm.loginFrom_TbCurrentWorkLocation.toPlainText())
     drProfile.education = str(ui_RegDocForm.loginFrom_TbEducation.toPlainText())
     checkNoneAtribute(drProfile)
-    
+    DBConnector.registorAccount(drProfile)
 
 def checkNoneAtribute(drProfileObj):
     if(drProfileObj.familyName == None or drProfileObj.familyName == ''):
@@ -137,24 +137,24 @@ def checkNoneAtribute(drProfileObj):
     else:
         if(drProfileObj.lastName == None or drProfileObj.lastName == ''):
             popupShowMessage("Please fill Last name.")
-        else:
-            if(drProfileObj.email == None or drProfileObj.email == ''):
-                popupShowMessage("Please fill email.")
-            else:
-                if(drProfileObj.PhoneNumber == None or drProfileObj.PhoneNumber == ''):
-                    popupShowMessage("Please fill PhoneNumber.")
-                else:
-                    if(drProfileObj.avatarURL == None or drProfileObj.avatarURL == ''):
-                        popupShowMessage("Please choose picture for profile.")
-                    else:
-                        if(drProfileObj.homeTown == None or drProfileObj.homeTown == ''):
-                            popupShowMessage("Please fill homeTown.")
-                        else:
-                            if(drProfileObj.currentWorkingLocation == None or drProfileObj.currentWorkingLocation == ''):
-                                popupShowMessage("Please provide current working location.")
-                            else:
-                                if(drProfileObj.education == None or drProfileObj.education == ''):
-                                    popupShowMessage("Please provide education detail.")
+        # else:
+        #     if(drProfileObj.email == None or drProfileObj.email == ''):
+        #         popupShowMessage("Please fill email.")
+        #     else:
+        #         if(drProfileObj.PhoneNumber == None or drProfileObj.PhoneNumber == ''):
+        #             popupShowMessage("Please fill PhoneNumber.")
+        #         else:
+        #             if(drProfileObj.avatarURL == None or drProfileObj.avatarURL == ''):
+        #                 popupShowMessage("Please choose picture for profile.")
+        #             else:
+        #                 if(drProfileObj.homeTown == None or drProfileObj.homeTown == ''):
+        #                     popupShowMessage("Please fill homeTown.")
+        #                 else:
+        #                     if(drProfileObj.currentWorkingLocation == None or drProfileObj.currentWorkingLocation == ''):
+        #                         popupShowMessage("Please provide current working location.")
+        #                     else:
+        #                         if(drProfileObj.education == None or drProfileObj.education == ''):
+        #                             popupShowMessage("Please provide education detail.")
 
 
 #######################################################################
@@ -197,7 +197,10 @@ if __name__ == "__main__":
     ui_RegDocForm.loginFrom_btnSubmit2.clicked.connect(addAchiverment)
     # add Experience
     ui_RegDocForm.loginFrom_btnSubmitEx.clicked.connect(addExperience)
-
+    # cursor = QtGui.QTextCursor()
+    # ui_RegDocForm.loginFrom_TbFirstname.setTextCursor(cursor)
+    # validator = QtGui.validator(regex)
+    # ui_RegDocForm.loginFrom_TbFirstname.setValidator(validator)
     # final Register
     ui_RegDocForm.loginFrom_btnReg.clicked.connect(RegisterAccount)
     #######################################################################
