@@ -3,6 +3,10 @@ from datetime import datetime, date
 import random
 import hashlib
 
+def getDate():
+    today = date.today()
+    current_date = today.strftime("20%y-%m-%d")
+    return str(current_date)
 def getRandomText():
     now = datetime.now()
     today = date.today()
