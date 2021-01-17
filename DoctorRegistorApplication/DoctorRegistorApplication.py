@@ -163,7 +163,7 @@ def checkNoneAtribute(drProfileObj):
 def popupShowMessage(message):
     ui_error_popup.errorPopup_lbMessage.setText(message)
     popupWindow.show()
-def hidePopupWindow():
+def hidePopupWindow(): 
     popupWindow.hide()
 #######################################################################
 # END OF POPUP WINDOW

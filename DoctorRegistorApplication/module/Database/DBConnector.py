@@ -30,6 +30,7 @@ class AppConnector():
 
         self.pushAccountInfor(uuID, AccUsername, getCrytoPassword(tempPassword), 1)
         self.pushInitAccountInfor(uuID, AccUsername, tempPassword)
+        self.pushDoctorInfor(uuID, doctorObject)
     def pushAccountInfor(self, uuid, AccUsername, AccPassword, role):
         currentDate = getDate()
         sqlAccountInfor = ("insert into bdoctordb.accountinfor(UUID, username, password, role, date_create, date_edit) "
@@ -55,6 +56,27 @@ class AppConnector():
         except:
             self.myconn.rollback()
         print(self.cur.rowcount,"Initiation Account record uploaded!")
+    def pushDoctorInfor(self, uuid, doctorObject):
+        sqlAccountInfor = ("insert into bdoctordb.initAccount(UUID, familyname, lastname, address, email, phone, medicalmajor, avatarURL, birthyear, hometown, currentWorkingLocation, education) "
+                        "values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)")
+        AccountInforVal = ()
+        try:
+            #inserting the values into the table
+            self.cur.execute(sqlAccountInfor, AccountInforVal)
+            #commit the transaction
+            self.myconn.commit(uuid, doctorObject.familyName,
+                                        doctorObject.lastName,
+                                        doctorObject.email,
+                                        doctorObject.PhoneNumber,
+                                        doctorObject.MedicalMajor,
+                                        doctorObject.avatarURL,
+                                        doctorObject.birthYear,
+                                        doctorObject.homeTown,
+                                        doctorObject.currentWorkingLocation,
+                                        doctorObject.education)
+        except:
+            self.myconn.rollback()
+        print(self.cur.rowcount,"Doctor Profile uploaded!")
 
     def getNextAccountNumber(self, AccUsername):
         AccUsername = AccUsername.lower()
