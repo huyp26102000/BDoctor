@@ -3,7 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'talkWithDoctor_Mobile' do
+target 'TalkWithDoctor_Mobile' do
   config = use_native_modules!
 
   use_react_native!(
@@ -12,7 +12,7 @@ target 'talkWithDoctor_Mobile' do
     :hermes_enabled => false
   )
 
-  target 'talkWithDoctor_MobileTests' do
+  target 'TalkWithDoctor_MobileTests' do
     inherit! :complete
     # Pods for testing
   end

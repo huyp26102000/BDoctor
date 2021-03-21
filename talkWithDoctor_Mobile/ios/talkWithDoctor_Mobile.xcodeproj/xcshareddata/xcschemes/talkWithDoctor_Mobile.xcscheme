@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "talkWithDoctor_Mobile.app"
-               BlueprintName = "talkWithDoctor_Mobile"
-               ReferencedContainer = "container:talkWithDoctor_Mobile.xcodeproj">
+               BuildableName = "TalkWithDoctor_Mobile.app"
+               BlueprintName = "TalkWithDoctor_Mobile"
+               ReferencedContainer = "container:TalkWithDoctor_Mobile.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "talkWithDoctor_MobileTests.xctest"
-               BlueprintName = "talkWithDoctor_MobileTests"
-               ReferencedContainer = "container:talkWithDoctor_Mobile.xcodeproj">
+               BuildableName = "TalkWithDoctor_MobileTests.xctest"
+               BlueprintName = "TalkWithDoctor_MobileTests"
+               ReferencedContainer = "container:TalkWithDoctor_Mobile.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "talkWithDoctor_Mobile.app"
-            BlueprintName = "talkWithDoctor_Mobile"
-            ReferencedContainer = "container:talkWithDoctor_Mobile.xcodeproj">
+            BuildableName = "TalkWithDoctor_Mobile.app"
+            BlueprintName = "TalkWithDoctor_Mobile"
+            ReferencedContainer = "container:TalkWithDoctor_Mobile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "talkWithDoctor_Mobile.app"
-            BlueprintName = "talkWithDoctor_Mobile"
-            ReferencedContainer = "container:talkWithDoctor_Mobile.xcodeproj">
+            BuildableName = "TalkWithDoctor_Mobile.app"
+            BlueprintName = "TalkWithDoctor_Mobile"
+            ReferencedContainer = "container:TalkWithDoctor_Mobile.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
