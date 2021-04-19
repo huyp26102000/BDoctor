@@ -49,7 +49,7 @@ def loadFiles():
     return filePath
 def loadRawImage(AvatarPath):
     currentPath = os.getcwd()
-    imp_OutputPathFile = currentPath + "/DoctorRegistorApplication/DataImageUser/Doctor/"
+    imp_OutputPathFile = currentPath + "/DataImageUser/Doctor/"
     # rawImagePath = currentPath + "//dataImage//OriginalXrayImage//"
     filePath = loadFiles()
     if filePath!=None:
@@ -137,24 +137,24 @@ def checkNoneAtribute(drProfileObj):
     else:
         if(drProfileObj.lastName == None or drProfileObj.lastName == ''):
             popupShowMessage("Please fill Last name.")
-        # else:
-        #     if(drProfileObj.email == None or drProfileObj.email == ''):
-        #         popupShowMessage("Please fill email.")
-        #     else:
-        #         if(drProfileObj.PhoneNumber == None or drProfileObj.PhoneNumber == ''):
-        #             popupShowMessage("Please fill PhoneNumber.")
-        #         else:
-        #             if(drProfileObj.avatarURL == None or drProfileObj.avatarURL == ''):
-        #                 popupShowMessage("Please choose picture for profile.")
-        #             else:
-        #                 if(drProfileObj.homeTown == None or drProfileObj.homeTown == ''):
-        #                     popupShowMessage("Please fill homeTown.")
-        #                 else:
-        #                     if(drProfileObj.currentWorkingLocation == None or drProfileObj.currentWorkingLocation == ''):
-        #                         popupShowMessage("Please provide current working location.")
-        #                     else:
-        #                         if(drProfileObj.education == None or drProfileObj.education == ''):
-        #                             popupShowMessage("Please provide education detail.")
+        else:
+            if(drProfileObj.email == None or drProfileObj.email == ''):
+                popupShowMessage("Please fill email.")
+            else:
+                if(drProfileObj.PhoneNumber == None or drProfileObj.PhoneNumber == ''):
+                    popupShowMessage("Please fill PhoneNumber.")
+                else:
+                    if(drProfileObj.avatarURL == None or drProfileObj.avatarURL == ''):
+                        popupShowMessage("Please choose picture for profile.")
+                    else:
+                        if(drProfileObj.homeTown == None or drProfileObj.homeTown == ''):
+                            popupShowMessage("Please fill homeTown.")
+                        else:
+                            if(drProfileObj.currentWorkingLocation == None or drProfileObj.currentWorkingLocation == ''):
+                                popupShowMessage("Please provide current working location.")
+                            else:
+                                if(drProfileObj.education == None or drProfileObj.education == ''):
+                                    popupShowMessage("Please provide education detail.")
 
 
 #######################################################################

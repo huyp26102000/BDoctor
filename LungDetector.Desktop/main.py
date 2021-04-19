@@ -7,7 +7,7 @@ from database.model.XrayImage import XrayImage
 from database.model.PatientHospitalizeInfor import Patient_hospitalize_infor
 from database.model.ImpImage import ImpImage
 from database.model.ImageInforToShow import ImageInforToShow
-from DL_model.Detector import Detector
+# from DL_model.Detector import Detector
 #######################################################################
 
 # EXTERAL LIBRARY
@@ -386,8 +386,8 @@ if __name__ == "__main__":
     ###################################################################
     # DETECTING
     ###################################################################
-    detector = Detector()
-    setupModel()
+    # detector = Detector()
+    # setupModel()
     ui.btn_analyse_LungMenu.clicked.connect(detectHeard)
     ###################################################################
 

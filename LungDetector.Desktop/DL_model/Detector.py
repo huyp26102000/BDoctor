@@ -1,9 +1,9 @@
 import keras
 import cv2
-from lib.keras_retinanet import models
-from lib.keras_retinanet.utils.image import read_image_bgr, preprocess_image, resize_image
-from lib.keras_retinanet.utils.visualization import draw_box, draw_caption
-from lib.keras_retinanet.utils.colors import label_color
+from keras_retinanet import models
+from keras_retinanet.utils.image import read_image_bgr, preprocess_image, resize_image
+from keras_retinanet.utils.visualization import draw_box, draw_caption
+from keras_retinanet.utils.colors import label_color
 import matplotlib.pyplot as plt
 import numpy as np
 import time
